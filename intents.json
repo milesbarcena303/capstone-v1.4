@@ -1,0 +1,118 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "Hello",
+                "Hello there"
+            ],
+            "responses": [
+                "Hello!",
+                "Hi there!",
+                "Hey! How can I assist you?",
+                "Hello there!",
+                "Hello there! How can I guide you through the CVSU admission process today?"
+            ]
+        },
+        {
+            "tag": "greeting2",
+            "patterns": [
+                "Hello How are you",
+                "Hi How are you",
+                "Hello what's up",
+                "Hi I have some questions about admissions."
+            ],
+            "responses": [
+                "Hello! Welcome to the CVSU Admission System chatbot. How can I assist you with your admission-related questions or concerns?",
+                "Hello! I'm not capable of emotions, but I'm here to make your CVSU admission experience as smooth as possible. How can I assist you today?",
+                "Hey! How can I assist you?",
+                " Of course! Feel free to ask any questions you have about the CVSU admission process, and I'll provide you with the information you need.",
+                "Hello there! How can I guide you through the CVSU admission process today?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "Goodbye! Have a great day.",
+                "Take care!",
+                "Until next time!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you"
+            ],
+            "responses": [
+                "You're welcome!",
+                "No problem!",
+                "Glad I could help."
+            ]
+        },
+        {
+            "tag": "University Application Date",
+            "patterns": [
+                "When can I start applying for college admission?",
+                "When is the admission date?",
+                "When is the deadline for college admission applications?"
+            ],
+            "responses": [
+                "The application process for college admission will start on January 24, 2022. You will be able to submit your application from that date onwards.",
+                "The deadline for college admission applications is April 24, 2022. Make sure to complete and submit your application before this date to ensure consideration for admission."
+            ]
+        },
+        {
+            "tag": "Course Information",
+            "patterns": [
+                "Tell me about computer science courses.",
+                "What courses are available for business majors?"
+            ],
+            "responses": [
+                "We offer a variety of computer science courses, covering topics such as algorithms, programming languages, and data structures.",
+                "For business majors, we have courses like Marketing Strategy, Financial Management, and Business Ethics."
+            ]
+        },
+        {
+            "tag": "Availability",
+            "patterns": [
+                "When are your customer support hours?",
+                "What's your availability?"
+            ],
+            "responses": [
+                "Our customer support team is available from 9 AM to 6 PM, Monday to Friday.",
+                "You can reach us for assistance between 9 AM and 6 PM on weekdays."
+            ]
+        },
+        {
+            "tag": "Transfer Students",
+            "patterns": [
+                "Can I transfer to your university?",
+                "Are there any specific requirements for transfer students?"
+            ],
+            "responses": [
+                "Yes, we welcome transfer students! The application process for transfer students involves submitting your transcripts, course descriptions, and other relevant documents.",
+                "Transferring to our university is possible. Make sure to provide your previous college transcripts and course descriptions when applying as a transfer student."
+            ]
+        },
+        {
+            "tag": "International Students",
+            "patterns": [
+                "I'm an international student. How can I apply?",
+                "What's the application process for international students?"
+            ],
+            "responses": [
+                "We're excited to welcome international students! The application process for international students is similar to domestic students. You'll need to provide English proficiency scores and relevant immigration documents.",
+                "International students are an important part of our community. Please ensure that you provide English proficiency scores and necessary immigration documents during the application process."
+            ]
+        }
+       
+    ]
+}

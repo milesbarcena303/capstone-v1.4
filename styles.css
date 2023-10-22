@@ -1,0 +1,143 @@
+/* Variables */
+:root {
+  --main-bg-color: #376d1d;
+  --main-text-color: #ffffff;
+  --second-text-color: #74b113;
+  --second-bg-color: #c1efde;
+}
+
+/* Common Styles */
+.rounded-full {
+  border-radius: 100%;
+}
+
+/* Wrapper and Page Content Styles */
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right, #376d1d, #83ce21, #aff331, #a2bb32, #58c01c);
+}
+
+#page-content-wrapper form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#training-console {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: pre-wrap;
+}
+
+/* Sidebar Styles */
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: 20rem; /* Initial width, set to 0 to hide it */
+  transition: width 0.25s ease-out;
+  background-image: linear-gradient(to bottom, #376d1d, #83ce21);
+  color: var(--main-text-color); /* Text color */
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 1rem 1.25rem; /* Increase the padding for better readability */
+  font-size: 1.2rem;
+  color: var(--second-text-color); /* Use secondary text color for the heading */
+}
+
+#sidebar-wrapper .list-group {
+  width: 100%; /* Make the list group full width of the sidebar */
+}
+
+/* Responsive Styles */
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+  display: none; /* Initially hide the content */
+}
+
+#wrapper.d-flex #page-content-wrapper {
+  display: block; /* Show the content when the "d-flex" class is applied */
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #272626;
+  color: #fff; /* Set the default text color to white in dark mode */
+}
+
+body.dark-mode #page-content-wrapper form,
+body.dark-mode #sidebar-wrapper {
+  background-color: #070707;
+  color: #fff; /* Set the text color to white in dark mode */
+  background-image: none;
+}
+
+body.dark-mode #wrapper {
+  background-image: linear-gradient(to right, #111, #222, #333);
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table {
+  background-color: #333;
+  color: #ffffff; /* Set the text color to white in dark mode */
+  border: 1px solid #131212;
+}
+
+body.dark-mode table th {
+  background-color: #222;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table td {
+  background-color: #111;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table tbody {
+  background-color: #111;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+/* Additional styling for table rows and cells if needed */
+body.dark-mode table tr:nth-child(even) {
+  background-color: #222;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
+
+body.dark-mode table tr:nth-child(odd) {
+  background-color: #111;
+  color: #ffffff; /* Set the text color to white in dark mode */
+}
